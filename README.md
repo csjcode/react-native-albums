@@ -116,5 +116,21 @@ For any application we create we have to register at least one component.
 ReactNative.AppRegistry.registerComponent('albums', () => App);
 ```
 
+---------------------------------
 
+5.19 Destrucuring Imports and Const
+
+Change code to destructure ReactNative:
+
+`import { Text, AppRegistry } from 'react-native';`  
+
+`AppRegistry.registerComponent('albums', () => App);`
+
+With ES6 the const App can be reduced to
+
+```javascript
+const App = () => (
+    <Text>Some Text</Text>
+  );
+```
 .
