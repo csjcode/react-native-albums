@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-class albums extends Component {
+export default class albums extends Component {
   render() {
     return (
       <View style={styles.container}>

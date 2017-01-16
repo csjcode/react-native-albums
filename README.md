@@ -14,4 +14,17 @@
 * MUST USE x86 image NOT x86_64
 
 * start emulator
-* > react-native run-android
+
+Start up Android Studio go to project
+Start AVD, start emulator
+
+`C:\Users\CS\AppData\Local\Android\sdk\"AVD Manager.exe"`
+
+Start Administrative Command line
+
+`> cd C:\Users\CS\Documents\Web Development\react-native\albums`
+
+`> packager.bat`
+`> react-native run-android`
+
+CTRL - M opens up menu on emulator
