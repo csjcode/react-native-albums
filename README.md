@@ -104,5 +104,17 @@ var App = function App() {
 
 source: https://babeljs.io/
 
+---------------------------------
+
+5.18 Registering (Render) a Component
+
+
+For any application we create we have to register at least one component.
+
+```javascript
+// Render it to a device.
+ReactNative.AppRegistry.registerComponent('albums', () => App);
+```
+
 
 .
