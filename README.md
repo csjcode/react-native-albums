@@ -18,13 +18,21 @@
 Start up Android Studio go to project
 Start AVD, start emulator
 
-`C:\Users\CS\AppData\Local\Android\sdk\"AVD Manager.exe"`
+`C:\Users\CS\AppData\Local\Android\sdk\"AVD Manager.exe"`  
 
 Start Administrative Command line
 
-`> cd C:\Users\CS\Documents\Web Development\react-native\albums`
+`> cd C:\Users\CS\Documents\Web Development\react-native\albums`  
 
-`> packager.bat`
-`> react-native run-android`
+`> C:\Users\CS\Documents\Web Development\react-native\albums\node_modules\react-native\packager\packager.sh `
+`> react-native run-android`  
 
 CTRL - M opens up menu on emulator
+
+Install eslint rules
+
+`> npm install --save-dev eslint-config-rallycoding`
+
+Add new eslintrc file to main directory - to hold project-specific rules
+
+New file: `.eslintrc`
