@@ -36,3 +36,48 @@ Install eslint rules
 Add new eslintrc file to main directory - to hold project-specific rules
 
 New file: `.eslintrc`
+
+
+------------------------
+
+Walkthrough of directories
+
+Used for for each Android and iOS (not using these much)
+
+```
+android  
+ios
+```
+Were mostly concerned with what is outside those folders.
+
+configuration and install dependencies.
+
+```
+node_modules
+```
+
+We'll be mostly concerned with these "entry points" to our application:
+```
+index.android.js
+index.ios.js
+```
+These files are pretty close to identical but can be modified for each platform.
+
+
+For the purpose of this course, if you are developing for android us index.android.js
+
+---------------------------------
+
+5.15 Getting Content on the Screen
+
+* Wipe out the index.android.js file and start from scratch
+* Let's get a component started
+
+
+
+
+
+
+
+
+.
