@@ -68,16 +68,41 @@ For the purpose of this course, if you are developing for android us index.andro
 
 ---------------------------------
 
-5.15 Getting Content on the Screen
+5.15 Import libraries React, ReactNative
 
 * Wipe out the index.android.js file and start from scratch
 * Let's get a component started
+* Import React and ReactNative
+---------------------------------
 
+5.17 Create a Component
 
+```javascript
+// Create a component
 
+const App = () => {
+  return (
+    <Text>Some Text</Text>
+  );
+};
 
+```
 
+Above JSX is the same as
 
+```javascript
+"use strict";
+
+var App = function App() {
+  return React.createElement(
+    Text,
+    null,
+    "Some Text"
+  );
+};
+```
+
+source: https://babeljs.io/
 
 
 .
