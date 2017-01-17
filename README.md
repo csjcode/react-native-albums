@@ -213,5 +213,17 @@ see images in research/
 * In App component `<Header headerText={'Albums'} />`
 
 
+---------------------------------
+
+### 6.27 Sourcing Header Data
+
+* Retrieve an album list from an API. We don't want to hard code the album data.
+* (1) AlbumList: We need to fetch the data and build a list
+* (2) AlbumDetail: We need to print the detail for the album
+
+
+
+
+
 
 .
