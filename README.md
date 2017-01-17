@@ -229,7 +229,27 @@ see images in research/
 * Use boiler plate to create AlbumList
 * Add import into App component (index.android.js)
 * In React Native there can only be 1 Top Level tag, other tags must be nested, no 2 top level tags
-*
+
+
+### 7.30. Class Based Components
+
+* So far we've been using functional components.
+* Two handle data we'll have to use a class based components.
+* We're goign to refactor to a class component.
+* Change import to include Component
+* All class components must have a render method
+* class does not need a semicolon at the extends
+```javascript
+class AlbumList extends Component {
+  render() {
+    return (
+      <View>
+        <Text>Album List!!!</Text>
+      </View>
+    );
+  }
+}
+```
 
 
 
