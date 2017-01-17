@@ -4,13 +4,12 @@
 
 import React from 'react';
 import { Text, AppRegistry } from 'react-native';
-import Header from './src/components/header';
 
 // Create a component
 
-const App = () => (
-  <Header />
+const Header = () => (
+    <Text>Albums</Text>
   );
 
 // Render it to a device.
-AppRegistry.registerComponent('albums', () => App);
+export default Header;

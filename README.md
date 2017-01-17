@@ -146,6 +146,20 @@ see images in research/
 
 ### 5.21 Header Component
 
+* Always do one component per file
+* Make src and component folder
+* /src/component
+* inside make header.js
+* Add boilerplate component code to header.js
+* note: AppRegistry is only for the root component - for the rest of the child components use `export default ComponentName`
+
+---------------------------------
+
+### 5.22 Consuming File Exports
+
+* Import header
+* Nest inside app
+* test - should show the knew Header component text message
 
 
 
