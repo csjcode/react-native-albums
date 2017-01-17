@@ -134,4 +134,21 @@ const App = () => (
     <Text>Some Text</Text>
   );
 ```
+
+---------------------------------
+
+### 5.20 Application Outline
+
+see images in research/
+
+
+---------------------------------
+
+### 5.21 Header Component
+
+
+
+
+
+
 .
