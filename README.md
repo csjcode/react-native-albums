@@ -172,8 +172,32 @@ see images in research/
 * `const { textStyle } = styles;`
 * Note: now that we have added more code in the return statement, change to curly braces
 
+---------------------------------
 
+### 5.24 More on Styling Components
 
+* With React Native to move things around (liek a div) we can use the View tag which is a pimitive element imported from Reat Native.
+* Add parentheses for multiline return
+* Wrap the Text with the View tag.
+* Add styling with viewStyle
+* Add viewStyle prop to component similar to destructuring used on the textStyle
+
+---------------------------------
+
+### 5.25 Introduction to Flexbox
+
+* Flexbox is a system of positioning elements within a container
+* Flexbox properties we use:
+* justifyContent (vertical position - flex-start, flex-end, center) and
+* alignItems (flex-start, flex-end, center)
+
+---------------------------------
+
+### 5.26 Header Styling
+
+* flexbox will be added to the View tag
+* add a shadow `shadowColor: '#000'  ` IMPORTANT: only works in iOS, need elevation for Android  
+* add elevation
 
 
 
