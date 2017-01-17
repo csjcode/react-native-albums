@@ -294,7 +294,6 @@ Course: "Hi!  The next section introduces a library called Axios, which currentl
 }
 ```
 
-
 ```javascript
 componentWillMount() {
   fetch('https://rallycoding.herokuapp.com/api/music_albums')
@@ -304,10 +303,95 @@ componentWillMount() {
   });
 }
 ```
-
 * Check in remote debugger
 
+* Problem is at this point we have order of operations problem. We need to make sure we the the data returned first before rendering.
+* We need to re-render the list when it comes in, but first display nothing.
 
+---------------------------------
+
+### 7.34 Component Level State - resolve with fetch and Component state update (setState)
+
+3 Steps of State:
+
+* (1) Set a default state.
+* (2) Tell state to update
+* (3) Make sure Component uses state.
+
+```javascript
+class AlbumList extends Component {
+  state = { albums: [] };
+  componentWillMount() {
+    // ASYNC HTTP Request to get albums from the API.
+    // eslint-disable-next-line
+    fetch('https://rallycoding.herokuapp.com/api/music_albums')
+    .then((response) => response.json())
+    .then((responseData) => this.setState({ albums: responseData }));
+  }
+```
+
+* setState will set the state with the responseData object  
+
+
+```javascript
+render() {
+  console.log(this.setState); // to check to make sure the state is working correctly
+```
+
+* Check for component state update in remote debugger console `http://localhost:8081/debugger-ui`
+
+
+
+
+
+-----------------------------------------------------------
+
+NOTE FOR USING FETCH
+
+```javascript
+
+// AlbumList.js
+
+// Disables eslint error messages about line endings.
+/*eslint linebreak-style: ["error", "windows"]*/
+
+// Imports
+import React, { Component } from 'react';
+import { ScrollView } from 'react-native';
+import AlbumDetail from './AlbumDetail';
+
+// Class component
+class AlbumList extends Component {
+  state = { albums: [] };
+  componentWillMount() {
+    // ASYNC HTTP Request to get albums from the API.
+    // eslint-disable-next-line
+    fetch('https://rallycoding.herokuapp.com/api/music_albums')
+    .then((response) => response.json())
+    .then((responseData) => this.setState({ albums: responseData }));
+  }
+
+ // Render all the albums that was fetched from the API.
+  renderAlbums() {
+    return this.state.albums.map(album =>
+      <AlbumDetail key={album.title} album={album} />
+    );
+  }
+
+// Render the component
+  render() {
+    return (
+      <ScrollView>
+        {this.renderAlbums()}
+      </ScrollView>
+    );
+  }
+}
+
+// Make compomnent available to other parts of the application
+export default AlbumList;
+
+```
 
 
 .
