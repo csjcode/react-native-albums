@@ -24,7 +24,7 @@ Start Administrative Command line
 
 `> cd C:\Users\CS\Documents\Web Development\react-native\albums`  
 
-`> C:\Users\CS\Documents\Web Development\react-native\albums\node_modules\react-native\packager\packager.sh `
+`> C:\Users\CS\Documents\Web Development\react-native\albums\node_modules\react-native\packager\packager.sh `  
 `> react-native run-android`  
 
 CTRL - M opens up menu on emulator
@@ -40,7 +40,7 @@ New file: `.eslintrc`
 
 ------------------------
 
-Walkthrough of directories
+### Walkthrough of directories
 
 Used for for each Android and iOS (not using these much)
 
@@ -68,14 +68,15 @@ For the purpose of this course, if you are developing for android us index.andro
 
 ---------------------------------
 
-5.15 Import libraries React, ReactNative
+### 5.15 Import libraries React, ReactNative
 
 * Wipe out the index.android.js file and start from scratch
 * Let's get a component started
 * Import React and ReactNative
+
 ---------------------------------
 
-5.17 Create a Component
+### 5.17 Create a Component
 
 ```javascript
 // Create a component
@@ -106,7 +107,7 @@ source: https://babeljs.io/
 
 ---------------------------------
 
-5.18 Registering (Render) a Component
+### 5.18 Registering (Render) a Component
 
 
 For any application we create we have to register at least one component.
@@ -118,7 +119,7 @@ ReactNative.AppRegistry.registerComponent('albums', () => App);
 
 ---------------------------------
 
-5.19 Destrucuring Imports and Const
+### 5.19 Destrucuring Imports and Const
 
 Change code to destructure ReactNative:
 
