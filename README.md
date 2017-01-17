@@ -163,7 +163,7 @@ see images in research/
 
 ---------------------------------
 
-### 5.23 Styling with React Native
+### 6.23 Styling with React Native
 
 * separate style file
 * Under component add a const styles
@@ -174,7 +174,7 @@ see images in research/
 
 ---------------------------------
 
-### 5.24 More on Styling Components
+### 6.24 More on Styling Components
 
 * With React Native to move things around (liek a div) we can use the View tag which is a pimitive element imported from Reat Native.
 * Add parentheses for multiline return
@@ -184,7 +184,7 @@ see images in research/
 
 ---------------------------------
 
-### 5.25 Introduction to Flexbox
+### 6.25 Introduction to Flexbox
 
 * Flexbox is a system of positioning elements within a container
 * Flexbox properties we use:
@@ -193,11 +193,24 @@ see images in research/
 
 ---------------------------------
 
-### 5.26 Header Styling
+### 6.26 Header Styling
 
 * flexbox will be added to the View tag
 * add a shadow `shadowColor: '#000'  ` IMPORTANT: only works in iOS, need elevation for Android  
 * add elevation
+
+---------------------------------
+
+### 6.27 Making the Header Reusable
+
+* Take out the hard coded Albums, make it reconfigurable
+* App component will decide what the text in the Header is
+* (1) First, identify the value in the Header that we want from the parent App component
+* `const Header = (props) => {`
+* (2) Make sure child component ie. Header is taking the "props" object (a "contract" that the prop will be supplied)
+* `<Text style={textStyle}>{props.headerText}</Text>`
+* (3) Make sure the parent provides that prop
+* In App component `<Header headerText={'Albums'} />`
 
 
 
