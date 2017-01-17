@@ -161,6 +161,18 @@ see images in research/
 * Nest inside app
 * test - should show the knew Header component text message
 
+---------------------------------
+
+### 5.23 Styling with React Native
+
+* separate style file
+* Under component add a const styles
+* CSS in React Native use camecase rather than dashs. So font-size is now fontSize
+* to show the styles, use a new destrucured const in the component return.
+* `const { textStyle } = styles;`
+* Note: now that we have added more code in the return statement, change to curly braces
+
+
 
 
 
