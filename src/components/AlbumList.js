@@ -5,7 +5,11 @@ import { View, Text } from 'react-native';
 
 class AlbumList extends Component {
   componentWillMount() {
-    // console.log('componentWillMount works');
+    fetch('https://rallycoding.herokuapp.com/api/music_albums')
+    .then((response) => response.json())
+    .then((responseData) => {
+      console.log(responseData);
+    });
   }
   render() {
     return (

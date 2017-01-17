@@ -230,6 +230,7 @@ see images in research/
 * Add import into App component (index.android.js)
 * In React Native there can only be 1 Top Level tag, other tags must be nested, no 2 top level tags
 
+---------------------------------
 
 ### 7.30. Class Based Components
 
@@ -251,6 +252,8 @@ class AlbumList extends Component {
 }
 ```
 
+---------------------------------
+
 ### 7.31 Lifecycle Methods
 
 ```javascript
@@ -264,7 +267,45 @@ componentWillMount() {
 * Debug Remotely
 * Opens new Browser and hit Inspect and then Console tab `http://localhost:8081/debugger-ui`
 * You can place the code `debugger` to stop the React script for testing
-* 
+*
+
+---------------------------------
+
+### 7.31 Lifecycle Methods
+
+
+Course: "Hi!  The next section introduces a library called Axios, which currently has some compatibility issues with React Native.  If you have any issues with Axios, check out this thread: https://www.udemy.com/the-complete-react-native-and-redux-course/learn/v4/questions/1924782.  You can use the native 'fetch' library in place of Axios."
+
+---------------------------------
+
+### 7.33 Network Requests, Fetch ajax request
+
+* IMPORTANT: There is a compatibility problem with axios - using fetch now.
+* Fix .eslintrc
+```javascript
+{
+"extends": "rallycoding",
+"env": {
+  "browser": true
+},
+  "globals": {
+      "fetch": true
+    }
+}
+```
+
+
+```javascript
+componentWillMount() {
+  fetch('https://rallycoding.herokuapp.com/api/music_albums')
+  .then((response) => response.json())
+  .then((responseData) => {
+    console.log(responseData);
+  });
+}
+```
+
+* Check in remote debugger
 
 
 
