@@ -3,16 +3,23 @@
 // Import a library to create a conmponent
 
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { Text, View } from 'react-native';
 
 // Create a component
 
 const Header = () => {
-  const { textStyle } = styles;
-  return  <Text style={textStyle}>Albums</Text>;
-  };
+  const { textStyle, viewStyle } = styles;
+  return (
+    <View style={viewStyle}>
+      <Text style={textStyle}>Albums</Text>
+    </View>
+  );
+};
 
 const styles = {
+  viewStyle: {
+    backgroundColor: '#f4f4f4',
+  },
   textStyle: {
     fontSize: 20
   }
