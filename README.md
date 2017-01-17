@@ -251,7 +251,20 @@ class AlbumList extends Component {
 }
 ```
 
+### 7.31 Lifecycle Methods
 
+```javascript
+componentWillMount() {
+  console.log('componentWillMount works');
+}
+```
+
+* Use the built in debugger with React Native to see errorsin a console
+* CTRL-M to get the menu
+* Debug Remotely
+* Opens new Browser and hit Inspect and then Console tab `http://localhost:8081/debugger-ui`
+* You can place the code `debugger` to stop the React script for testing
+* 
 
 
 
