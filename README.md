@@ -221,6 +221,16 @@ see images in research/
 * (1) AlbumList: We need to fetch the data and build a list
 * (2) AlbumDetail: We need to print the detail for the album
 
+---------------------------------
+
+### 7.29 List Component Boilerplate
+
+* see pic of Fetch Album List
+* Use boiler plate to create AlbumList
+* Add import into App component (index.android.js)
+* In React Native there can only be 1 Top Level tag, other tags must be nested, no 2 top level tags
+*
+
 
 
 
