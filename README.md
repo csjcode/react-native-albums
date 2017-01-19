@@ -371,6 +371,37 @@ return (
 );
 ```
 
+---------------------------------
+
+### 7.37 Displaying Individual Albums
+
+* we need to setup the unique key - DONT use array index
+* if the album has an id that is good, but this doesn't
+* we'll use album.title
+* create AlbumDetail component with boilerplate
+* in AlbumList import AlbumDetail
+* Replace Text tag with AlbumDetail
+* We need to pass a prop from the AlbumDetail tag to AlbumDetail component
+* `<AlbumDetail key={album.title} album={album} />`
+* Now in AlbumDetail we will have a prop of props.album
+
+Add in props:
+
+```javascript
+const AlbumDetail = (props) => {
+  return (
+    <View>
+      <Text>{props.album.title}</Text>
+    </View>
+  );
+};
+```
+
+---------------------------------
+
+### 7.38. Fantastic Reusable Components - The Card
+
+
 
 
 -----------------------------------------------------------
