@@ -399,11 +399,33 @@ const AlbumDetail = (props) => {
 
 ---------------------------------
 
-### 7.38. Fantastic Reusable Components - The Card
+### 7.38 Fantastic Reusable Components - The Card
 
 * Make a Card and CardItem component
 * see image of components (sketch)
 * Create Card component
+
+---------------------------------
+
+### 7.39 Styling a Card
+
+* Open up Card component
+* Add const style = line
+* Add inside View `<View style={styles.containerStyle}> </View>`
+
+---------------------------------
+
+### 7.40 Passing Components as Props
+
+* Import Card into AlbumDetail
+* replace View with Card in AlbumDetail
+* Next we have to tell Card to render children it gets
+* Add props into Card component `const Card = (props) => {`
+* Now add reference in Card return to {props.children}
+* 
+
+
+
 
 
 -----------------------------------------------------------
