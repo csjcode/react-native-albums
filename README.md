@@ -340,6 +340,18 @@ render() {
 
 * Check for component state update in remote debugger console `http://localhost:8081/debugger-ui`
 
+---------------------------------
+
+### 7.35 MORE on Component Level State
+
+* change State with setState NOT this.state=
+* props is for parent to child communication
+* state is for a components internal changes
+
+---------------------------------
+
+### 7.36 Rendering a List of Components
+
 
 
 
