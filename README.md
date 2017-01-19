@@ -352,7 +352,24 @@ render() {
 
 ### 7.36 Rendering a List of Components
 
+* Only use state with class based components
+* Helper method: renderAlbums - map over the array of album results
 
+```javascript  
+renderAlbums() {
+  return this.state.albums.map(album =>
+    <Text>{album.title}</Text>
+  );
+}
+
+...
+
+return (
+  <View>
+    {this.renderAlbums()}
+  </View>
+);
+```
 
 
 
