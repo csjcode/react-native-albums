@@ -401,7 +401,9 @@ const AlbumDetail = (props) => {
 
 ### 7.38. Fantastic Reusable Components - The Card
 
-
+* Make a Card and CardItem component
+* see image of components (sketch)
+* Create Card component
 
 
 -----------------------------------------------------------
