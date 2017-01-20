@@ -422,10 +422,26 @@ const AlbumDetail = (props) => {
 * Next we have to tell Card to render children it gets
 * Add props into Card component `const Card = (props) => {`
 * Now add reference in Card return to {props.children}
+
+---------------------------------
+
+### 7.41 Dividing Cards into Sections
+
+* Next we'll do the CardItem component - make that CardSection instead
+* Make a CardSection component
+* Put in boilerplate.
+* Ask: Is this a class component or functional component? Functional
+* Pass in styles sumilar to Card
+* Add props and props.children
+* AlbumDetail: Import CardSection and wrap Text tag
+
+---------------------------------
+
+### 7.42 Mastering Layout with Flexbox
+
 * 
-
-
-
+*
+*
 
 
 -----------------------------------------------------------
