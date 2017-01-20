@@ -465,7 +465,27 @@ const AlbumDetail = (props) => {
 
 ### 8.45 Images with React Native
 
+* React Native library has an Image primitive like the View or Text
+* Import Image tag
+* `<Image source={{ uri:props.album.thumbnail_image}}></Image>`
+* Destructure props: When we use the same props variable throughout the components we should destructure
+* OLD: `const AlbumDetail = (props) => {`
+* NEW:
+```javascript
+  const AlbumDetail = ({ album }) => {
+    const { title, artist, thumbnail_image } = album;
+```  
 
+* Check emulator -- WHOOPS, not working, no image. Why?
+* Must put in styling rule with height and width.
+* Add thumbnailStyle style
+* Review... looks good.
+* Destructure the styles.
+`const { headerContentStyle, thumbnailStyle} = styles;`
+
+---------------------------------
+
+### 8.46 Displaying Album Artwork
 
 
 -----------------------------------------------------------
