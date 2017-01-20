@@ -439,9 +439,33 @@ const AlbumDetail = (props) => {
 
 ### 7.42 Mastering Layout with Flexbox
 
-* 
-*
-*
+
+---------------------------------
+
+### 8.43 Positioning of Elements on Mobile
+
+* flexDirection to row will space items horizontally, column vertically
+
+
+---------------------------------
+
+### 8.44 More on Styling
+
+```javascript
+<CardSection>
+  <View></View>
+  <View style={styles.headerContentStyle}>
+    <Text>{props.album.title}</Text>
+    <Text>{props.album.artist}</Text>
+  </View>
+</CardSection>
+```
+
+---------------------------------
+
+### 8.45 Images with React Native
+
+
 
 
 -----------------------------------------------------------
