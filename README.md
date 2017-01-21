@@ -536,7 +536,20 @@ const AlbumDetail = (props) => {
 * `<TouchableOpacity style={buttonStyle}>`
 * Add Text style
 * Destructure
-* 
+
+---------------------------------
+
+### 8.50 Responding to User Input
+
+* We need to set the Button to do something now.
+* You can add a prop to TouchableOpacity called onPress
+* `<TouchableOpacity onPress={() => console.log('pressed!')} style={buttonStyle}>`
+* Add onPress to Button in the AlbumDetail:  `<Button onPress={() => console.log(title)} />`
+* IMPORTANT: onPress is an actual defined prop name of TouchableOpacity, however it's not defined for Button primitives. In Button could call it something different liek onButtonPress, but for simplicity we are using the same prop name as TouchableOpacity.
+* Destructure Button prop
+* `const Button = ({ onPress }) => {` and `<TouchableOpacity onPress={onPress} style={buttonStyle}>`
+
+
 
 -----------------------------------------------------------
 
