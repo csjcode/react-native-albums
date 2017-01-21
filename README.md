@@ -24,7 +24,10 @@ Start Administrative Command line
 
 `> cd C:\Users\CS\Documents\Web Development\react-native\albums`  
 
-`> C:\Users\CS\Documents\Web Development\react-native\albums\node_modules\react-native\packager\packager.sh `  
+`> C:\Users\CS\Documents\Web Development\react-native\albums\node_modules\react-native\packager\packager.sh `
+
+`> cd C:\Users\CS\Documents\Web Development\react-native\albums`  
+
 `> react-native run-android`  
 
 CTRL - M opens up menu on emulator
@@ -486,6 +489,24 @@ const AlbumDetail = (props) => {
 ---------------------------------
 
 ### 8.46 Displaying Album Artwork
+
+* Add new thumbnailContainerStyle
+* Add new headerTextStyle
+* Add new CardSection
+```javascript
+<CardSection>
+  <Image source={{ uri: image }} />
+</CardSection>
+```
+* Set height and width
+* How to set the width? We need full width
+* Add imageStyle
+* Works, but scrolling doesn;t work
+
+---------------------------------
+
+### 8.47 Making Content Scrollable
+
 
 
 -----------------------------------------------------------
