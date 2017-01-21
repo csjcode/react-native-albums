@@ -527,6 +527,17 @@ const AlbumDetail = (props) => {
 * Check ReactNative Docs https://facebook.github.io/react-native/docs/getting-started.html
 * Import TouchableOpacity
 
+---------------------------------
+
+### 8.49 Styling Buttons with UX considerations
+
+* Add styles to Button
+* Destrucure styles
+* `<TouchableOpacity style={buttonStyle}>`
+* Add Text style
+* Destructure
+* 
+
 -----------------------------------------------------------
 
 
