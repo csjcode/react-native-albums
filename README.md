@@ -507,9 +507,24 @@ const AlbumDetail = (props) => {
 
 ### 8.47 Making Content Scrollable
 
+* In AlbumList First identify the JSX that need to Scrollable
+* Replace View with ScrollView
+* This is still incomplete - does not work as expected
+* Root View must have style of flex:1 to strectch all the way down
+`<View style={{ flex: 1 }}>`
+
+
+---------------------------------
+
+### 8.48 Handling User Input with Buttons
+
 
 
 -----------------------------------------------------------
+
+
+
+
 
 NOTE FOR USING FETCH
 
