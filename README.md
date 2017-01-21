@@ -541,7 +541,7 @@ const AlbumDetail = (props) => {
 
 ### 8.50 Responding to User Input
 
-* We need to set the Button to do something now.
+* We need to set the Button to do something now. We need to add a hook for the button press.
 * You can add a prop to TouchableOpacity called onPress
 * `<TouchableOpacity onPress={() => console.log('pressed!')} style={buttonStyle}>`
 * Add onPress to Button in the AlbumDetail:  `<Button onPress={() => console.log(title)} />`
@@ -549,6 +549,17 @@ const AlbumDetail = (props) => {
 * Destructure Button prop
 * `const Button = ({ onPress }) => {` and `<TouchableOpacity onPress={onPress} style={buttonStyle}>`
 
+---------------------------------
+
+### !!!! UPDATED ---- IMPORTANT: Button now has an onPress prop (updated in React Native) see docs: https://facebook.github.io/react-native/docs/button.html
+
+---------------------------------
+
+### 8.51 Linking between Mobile Apps
+
+* We need to open a browser
+* Go to docs APIs > Linking: https://facebook.github.io/react-native/docs/linking.html
+* Import library Linking
 
 
 -----------------------------------------------------------
