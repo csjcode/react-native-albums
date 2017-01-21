@@ -518,7 +518,14 @@ const AlbumDetail = (props) => {
 
 ### 8.48 Handling User Input with Buttons
 
-
+* (1) Button process
+* (2) Open web browser on device and point to url
+* Create a reusable Button component
+* Import into AlbumDetail
+* Add Button component inside a new CardSection
+* How to handle Button press???
+* Check ReactNative Docs https://facebook.github.io/react-native/docs/getting-started.html
+* Import TouchableOpacity
 
 -----------------------------------------------------------
 
