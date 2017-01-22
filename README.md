@@ -561,6 +561,28 @@ const AlbumDetail = (props) => {
 * Go to docs APIs > Linking: https://facebook.github.io/react-native/docs/linking.html
 * Import library Linking
 
+---------------------------------
+
+### 8.52 Setting Button Text by Props
+
+* We want tp make a reusable component
+* We can add a new prop or pass props.children
+* Destrucuture props.children
+* 
+
+```javascript
+const Button = ({ onPress, children }) => {
+  const { buttonStyle, textStyle } = styles;
+  return (
+    <TouchableOpacity onPress={onPress} style={buttonStyle}>
+      <Text style={textStyle}>
+        {children}
+      </Text>
+    </TouchableOpacity>
+  );
+};
+
+```
 
 -----------------------------------------------------------
 
