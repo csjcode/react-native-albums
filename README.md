@@ -41,6 +41,12 @@ Add new eslintrc file to main directory - to hold project-specific rules
 New file: `.eslintrc`
 
 
+---------------------------------
+
+## Buy Album App
+
+---------------------------------
+
 ------------------------
 
 ### Walkthrough of directories
@@ -568,7 +574,7 @@ const AlbumDetail = (props) => {
 * We want tp make a reusable component
 * We can add a new prop or pass props.children
 * Destrucuture props.children
-* 
+*
 
 ```javascript
 const Button = ({ onPress, children }) => {
@@ -583,6 +589,28 @@ const Button = ({ onPress, children }) => {
 };
 
 ```
+
+---------------------------------
+
+## Auth App
+
+---------------------------------
+
+### 8.54. Auth App Introduction
+
+* Create repo & clone react-native-auth
+* `> react native init auth`
+* See mockup images and components image
+* We're going to sign up for Firebase
+
+---------------------------------
+
+### 8.55 A Common Root Component
+
+
+
+
+
 
 -----------------------------------------------------------
 
